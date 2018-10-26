@@ -1,0 +1,47 @@
+<style>
+    *::before,
+    *::after {
+        display: block;
+        padding: 1rem;
+    }
+
+    html {
+        font-family: monospace;
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    head {
+        display: block;
+    }
+
+    body {
+        display: inline;
+        margin: 0;
+    }
+
+    html::before {
+        content: 'This is a working website with only one HTML tag.';
+    }
+
+    html::after {
+        content: 'Created by Atanas Atanasov <github.com/scriptex>.';
+    }
+
+    head::before {
+        content: 'There are six text elements on this page.';
+    }
+
+    head::after {
+        content: 'This is just a proof that you don\'t need HTML to code websites.';
+    }
+
+    body::before {
+        content: 'It\'s a completely responsive webpage.';
+    }
+
+    body::after {
+        content: 'Use CMD + Alt + U (or CTRL + U) to see the source of the page.';
+    }
+</style>
